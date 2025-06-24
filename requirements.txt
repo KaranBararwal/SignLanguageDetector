@@ -1,18 +1,15 @@
-# Streamlit and WebRTC
+# Core dependencies
 streamlit==1.35.0
 streamlit-webrtc==0.45.0
 
-# OpenCV - headless (to avoid GUI conflicts in server/cloud)
-opencv-python-headless==4.9.0.80
+# Use opencv-python-headless to avoid GUI conflicts
+opencv-python-headless==4.8.0.74
 
-# TensorFlow CPU-only version
+# TensorFlow & compatible NumPy
 tensorflow-cpu==2.12.0
+numpy==1.23.5  # ✅ Compatible with tf==2.12.0
 
-# AV (for streamlit-webrtc video processing)
+# Media and model I/O
 av==10.0.0
-
-# Core numerical libraries
-numpy==1.24.3
-
-# Optional: safer TOML parser if you’re modifying .toml files
+h5py==3.10.0  # Required for some .h5 model loading
 toml==0.10.2

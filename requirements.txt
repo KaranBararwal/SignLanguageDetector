@@ -1,15 +1,7 @@
-# Core dependencies
 streamlit==1.35.0
 streamlit-webrtc==0.45.0
-
-# Use opencv-python-headless to avoid GUI conflicts
-opencv-python-headless==4.8.0.74
-
-# TensorFlow & compatible NumPy
-tensorflow-cpu==2.12.0
-numpy==1.23.5  # ✅ Compatible with tf==2.12.0
-
-# Media and model I/O
 av==10.0.0
-h5py==3.10.0  # Required for some .h5 model loading
+opencv-python-headless==4.5.5.62
+tensorflow-cpu==2.8.0
+numpy==1.22.0
 toml==0.10.2

@@ -7,10 +7,9 @@ from tensorflow.keras.models import load_model
 import av
 
 # Load model
-model = tf.keras.models.load_model("asl_model.keras")
 
-import os
-print("Exists:", os.path.exists("asl_model.keras"))
+model = tf.keras.models.load_model("asl_model.keras")
+print("✅ Model loaded successfully!")
 
 
 labels_map = [chr(i) for i in range(65, 91) if i != 74]  # A-Z excluding 'J'

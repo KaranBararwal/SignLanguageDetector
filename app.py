@@ -7,7 +7,8 @@ from tensorflow.keras.models import load_model
 import av
 
 # Load model
-model = load_model("asl_model.h5")
+model = tf.keras.models.load_model("asl_model.keras")
+
 labels_map = [chr(i) for i in range(65, 91) if i != 74]  # A-Z excluding 'J'
 
 def predict_sign(frame):
